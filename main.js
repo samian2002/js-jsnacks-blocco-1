@@ -1,11 +1,12 @@
-let primaSringa = prompt("Inserisci un testo");
+let primaStringa = prompt("Inserisci un testo");
 let secondaStringa = prompt("Inserisci un altro testo");
 
-if (primaSringa.length <= secondaStringa.length) {
-    console.log('la parola più corta è: ' + primaSringa);
-    console.log('la parola più lunga è: ' + secondaStringa);
-}
-else {
-    console.log('la parola più corta è: ' + secondaStringa);
-    console.log('la parola più lunga è: ' + primaSringa);
+if (primaStringa.length === secondaStringa.length) {
+    console.log("La lunghezza è uguale.");
+} else if (primaStringa.length < secondaStringa.length) {
+    console.log("La parola più corta è: " + primaStringa);
+    console.log("La parola più lunga è: " + secondaStringa);
+} else {
+    console.log("La parola più corta è: " + secondaStringa);
+    console.log("La parola più lunga è: " + primaStringa);
 }
